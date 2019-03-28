@@ -48,7 +48,7 @@ app.listen(9001, () => {
 
 		connection.query(myQuery, function (error, results) {
 			if (error) throw error;
-			console.log('The solution is: ', results);
+			console.log('affected', results.length);
 		})
 	});
 
